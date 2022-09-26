@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Estudando DOM - JavaScript</title>
+
+    <style>
+        #area {
+            background-color: lightseagreen;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Eventos com o DOM-->
+
+    <div id="area">
+        interagir
+    </div>
+
+    <script>
+
+        var area = document.querySelector("#area") 
+        //O D.queySelector faz a ligação da variavel area no JS, com o elemento id="area" no HTML.
+        //add.EventListener - Cria um evento. 
+        area.addEventListener("click", clicar)
+        area.addEventListener("mouseenter", entrar)
+        area.addEventListener("mouseout", sair)
+
+        function clicar() {
+            area.innerText = "Clicou"; 
+            //inneText só muda o texto, ao contráio do innerHTML que pode coloca tags.
+            //inicialmente estará escrito "interagir", porém quando ao clicar ele muda paa Clicou
+            area.style.background = "lightblue"
+        }
+
+        function entrar() {
+            area.innerText = "Entrou"
+        }
+
+        function sair() {
+            area.innerText = "Saiu"
+            area.style.background = "lightpink"
+        }
+    </script>
+
+</body>
+</html>

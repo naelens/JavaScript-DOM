@@ -1,0 +1,25 @@
+body {
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    margin: 20px;
+}
+
+a {
+    padding: 12px;
+    text-decoration: none;
+    background-color: rgb(119, 20, 119);
+    color: black;
+    border-radius: 10px;
+    font-size: 14px;  
+}
+
+a:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+pre {
+    color:rgb(152, 52, 152);
+    font-size: 16px;
+}

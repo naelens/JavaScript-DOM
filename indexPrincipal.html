@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylePrincipal/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <code>
+        <h2>Primeira aula: Criação de Function para soma de valores </h2>
+        <pre>
+            function somar() {
+                var tipo1 = document.querySelector('input#t1')
+                var tipo2 = document.querySelector('input#t2')
+                var resultado = document.querySelector('div#resultado')
+                var n1 = Number(tipo1.value)
+                var n2 = Number(tipo2.value)
+                var s = n1 + n2;
+    
+                resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s} `
+            }
+        </pre>
+        <a href="./index2.html">Veja o código funcionando</a>
+    
+        <h2>Segunda aula: Criação de EVentos com o DOM</h2>
+        <pre>
+            var area = document.querySelector("#area")
+       
+            area.addEventListener("click", clicar)
+            area.addEventListener("mouseenter", entrar)
+            area.addEventListener("mouseout", sair)
+
+            function clicar() {
+                area.innerText = "Clicou";
+                area.style.background = "lightblue"
+            }
+
+            function entrar() {
+                area.innerText = "Entrou"
+            }
+
+            function sair() {
+                area.innerText = "Saiu"
+                area.style.background = "lightpink"
+            }
+        </pre>
+        <a href="./index1.html">Veja o código funcionando</a>
+
+        <h2>Terceira aula: Calculando com o JavaScript</h2>
+        <pre>
+                var btn = document.querySelector("#botao")
+                btn.addEventListener("click", mostrarResultado)
+        
+                function mostrarResultado() {
+                    var numero1 = 10;
+                    var numero2 = 50;
+                    var resultado = numero1 + numero2;
+                    document.querySelector('#resultado').innerText = resultado;
+                }
+        </pre>
+        <a href="./index3.html">Veja o código funcionado</a>
+        
+    </code>
+</body>
+</html>

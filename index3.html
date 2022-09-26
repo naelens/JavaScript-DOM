@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            text-align: center;
+            background-color: #cfbfda;
+        }
+
+        #botao {
+            padding: 10px;
+            background-color: rgb(174, 87, 255);
+            border: none;
+            border-radius: 20px;
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Calculando com JavaScript</title>
+</head>
+
+<body>
+
+    <div>
+        <h2>Cálculo com JavaScript</h2>
+        <p>10 + 50 = <strong id="resultado"></strong></p>
+        <input type="button" value="Valor" id="botao">
+    </div>
+   
+    <script>
+        var btn = document.querySelector("#botao")
+        btn.addEventListener("click", mostrarResultado)
+
+        function mostrarResultado() {
+            var numero1 = 10;
+            var numero2 = 50;
+            var resultado = numero1 + numero2;
+            document.querySelector('#resultado').innerText = resultado;
+        }
+    </script>
+
+</body>
+</html>
