@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Mudando as cores do body com uma function-->
+    <button onClick="Mycolor1()">Color purple</button>
+    <button onClick="Mycolor2()">Color pink</button>
+    <button onClick="Mycolor3()">Change yellow</button>
+
+    <script>
+
+        var element = document.querySelector("body");
+
+        function Mycolor1() {
+            element.style.backgroundColor='#cfbfda';
+        }
+        function Mycolor2() {
+            element.style.backgroundColor='#fdaaff';
+        }
+        function Mycolor3() {
+            element.style.backgroundColor='#efef81';
+        }
+
+    </script>
+
+</body>
+</html>

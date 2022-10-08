@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ativo {
+            margin-top: 200px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--Estudos sobre JavaScript - Origamid-->
+    <nav>
+        <ul id="menu">
+            <li><a href="">Home</a></li>
+            <li class="produtos"><a href="">Produtos</a></li>
+        </ul>
+    </nav>
+    
+
+    <script>
+        const nav = document.querySelector('nav');
+        const produtos = document.querySelector('.produtos a');
+        
+        nav.style.backgroundColor = 'pink';
+        nav.style.padding = '20px';
+        nav.classList.add("ativo"); 
+        console.log(nav)
+        
+        //(produto.innerText) - Exibe o nome 'Produto'.
+        //(produtos.href) - Para exibir o endereço.
+        //produtos.remove() - Essa function pode remover o elemento produtos da lista li.
+        //nav.classList.add("ativo") - Criação de classes atráves do JS, podendo ser utilizada no CSS. 
+        
+    </script>
+</body>
+</html>

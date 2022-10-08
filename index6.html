@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Objetos no JavaScript-->
+    <!--Forma de mantermos dados associados e organizados-->
+    <!--Dentro de um Objeto pode ter métodos e propriedades-->
+    <!--console.log - console é um objeto que é acessado por um método que seria o .log()-->
+    <!--Length de uma String é o total de caracteres que ela possui-->
+    <p>Algum texto</p>
+
+    <script>
+
+        const livro = {
+            nome: "Senhor dos Anéis",
+            ano: 1964, 
+            autor: 'J. R. R. Tolkin',
+
+        }
+        
+        const filme = {
+            nome: "Senhor dos Anéis",
+            ano: 1964, 
+            autor: 'J. R. R. Tolkin',
+            diretor: "Peter Jackson"
+        }
+
+        const texto = document.querySelector("p");
+        console.log(livro.autor.toLocaleUpperCase()) //Coloca todas as letras em maiusculo. 
+
+        const decimal = 2.99;
+        console.log(decimal.toFixed()) 
+        //O toFixed() arredonda valores. Porém o toFixed retorna o valor String e não Number. 
+        console.log(3) // Nesse console retorna Number. 
+
+        console.log(Number(decimal.toFixed()));
+        //com o Number ele transforma um valor em número. 
+
+        const decimal_2 = 122.99;
+        const total = decimal_2.toFixed();
+        console.log(total); //aredonda para 123 normalmente. Lembrando que é uma String.
+
+    </script>
+</body>
+</html>
